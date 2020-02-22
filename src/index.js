@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css'
-import CheckBox from './components/CheckBox/index'
+import App from './components/App'
 
 ReactDOM.render(
-    <div>
-        <CheckBox text="Hello, how are you, Im fine, thanks. Please, click me!!!"></CheckBox>
-    </div>
+    <App/>
     , document.getElementById('root'));
