@@ -10,6 +10,7 @@ class Principal extends React.Component {
             <div>
                 <Header></Header>
                 <h1>Pagina Principal</h1>
+                <p>agregando algo</p>
                 <Link to="/new">
                     <button type="button">Next page</button>
                 </Link>
