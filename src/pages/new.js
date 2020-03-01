@@ -8,8 +8,8 @@ class New extends React.Component {
         return(
             <div>
                 <Header></Header>
-                <h1>Pagina New</h1>
-                <Link to="/principal">
+                <h1>New</h1>
+                <Link to="/">
                     <button type="button">Back page</button>
                 </Link>
             </div>

@@ -11,7 +11,11 @@ class Principal extends React.Component {
                 <Header></Header>
                 <h1>Pagina Principal</h1>
                 <Link to="/new">
-                    <button type="button">Next page</button>
+                    <button type="button">Go to new</button>
+                </Link>
+                <br></br>
+                <Link to="/mapa">
+                    <button type="button">Go to map</button>
                 </Link>
             </div>
         )
