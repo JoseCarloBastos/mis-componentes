@@ -7,6 +7,7 @@ const ContentStyled = styled.div`
     height: 300px;
     text-align: center;
     padding: 70px 0;
+    box-shadow: 0 5px 5px -3px white;
 `
 
 export default ContentStyled

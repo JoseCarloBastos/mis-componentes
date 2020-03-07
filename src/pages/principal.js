@@ -13,7 +13,10 @@ class Principal extends React.Component {
                 <Header></Header>
                 <h1>Pagina Principal</h1>
                 <Link to="/new">
-                    <Button color="red" text="Go to new"/>
+                    <Button 
+                        transparent="true"
+                        color="red"
+                        text="Go to new"/>
                 </Link>
                 <br></br>
                 <Link to="/mapa">
