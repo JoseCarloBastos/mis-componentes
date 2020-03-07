@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header/index';
-import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps';
+import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
+import Button from '../components/Button/index';
+import Base from '../components/Base/index';
 
 function Map() {
     return (
@@ -20,11 +22,11 @@ class Mapa extends React.Component {
 
     render() {
         return (
-            <div>
+            <Base>
                 <Header></Header>
                 <h1>Mapa</h1>
                 <Link to="/">
-                    <button type="button">Back page</button>
+                    <Button text="Back page"/>
                 </Link>
                 <br></br>
                 <div style={{width: '50vw', height: '50vh', textAlign: 'center'}}>
@@ -36,7 +38,7 @@ class Mapa extends React.Component {
 
                     />
                 </div>
-            </div>
+            </Base>
         )
     }
 

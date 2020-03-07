@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 const ContentStyled = styled.div`
-    background: #E9E9E9;
-    color: #0021DD;
+    background: rgb(0,0,0,0.5);
+    color: white;
     width: 100%;
     height: 300px;
     text-align: center;
-    padding-top: 30px;
+    padding: 70px 0;
 `
 
 export default ContentStyled

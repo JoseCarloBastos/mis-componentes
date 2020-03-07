@@ -1,18 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Header from '../components/Header/index'
+import Header from '../components/Header/index';
+import Button from '../components/Button/index';
+import Base from '../components/Base/index';
 
 class New extends React.Component {
 
     render() {
         return(
-            <div>
+            <Base>
                 <Header></Header>
                 <h1>New</h1>
                 <Link to="/">
-                    <button type="button">Back page</button>
+                    <Button text="Back page"/>
                 </Link>
-            </div>
+            </Base>
         )
     }
 
