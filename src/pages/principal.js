@@ -13,11 +13,24 @@ class Principal extends React.Component {
                 <Header></Header>
                 <h1>Pagina Principal</h1>
                 <Link to="/new">
-                    <Button color="red" text="Go to new"/>
+                    <Button 
+                        variante="transparent"
+                        color="red"
+                        text="Go to new"/>
                 </Link>
                 <br></br>
                 <Link to="/mapa">
-                    <Button color="blue" text="Go to map"/>
+                    <Button 
+                        variante="transparent"
+                        color="blue"
+                        text="Go to map"/>
+                </Link>
+                <br></br>
+                <Link to="/mobile">
+                    <Button 
+                        variante="transparent"
+                        color="green"
+                        text="Go to phone"/>
                 </Link>
             </Base>
         )
