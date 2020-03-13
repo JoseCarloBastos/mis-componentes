@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Principal from '../pages/principal';
 import New from '../pages/new';
 import Mapa from '../pages/mapa';
+import Mobile from '../pages/phone';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Route exact path="/" component={Principal}/>
             <Route exact path="/new" component={New}/>
             <Route exact path="/mapa" component={Mapa}/>
+            <Route exact path="/mobile" component={Mobile}/>
         </BrowserRouter>
     )
 }

@@ -52,13 +52,13 @@ const ButtonStyled = styled.button`
     }}
 
     ${props => {
-        if (props.transparent==="true") {
-            return `background: rgb(0,0,0,0.5);
+        if (props.variante==="transparent") {
+            return `background: rgb(0,0,0,0.2);
                     border-color: ${getColor(props)}; 
                     color: ${getColor(props)}; 
                     &:hover {
                         background: ${getColor(props)};
-                        color: ${COLOR_WHITE};
+                        color: rgb(0,0,0);
                     }`;
         } else {
             return `background: ${COLOR_WHITE};

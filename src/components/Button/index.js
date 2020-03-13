@@ -4,10 +4,10 @@ import ButtonStyled from './styled/button'
 class Button extends React.Component {
 
     render() {
-        const { text, color, trasnparent } = this.props
+        const { text, color, variante } = this.props
         return (
             <div>
-                <ButtonStyled trasnparent={trasnparent} color={color}>{text}</ButtonStyled>
+                <ButtonStyled variante={variante} color={color}>{text}</ButtonStyled>
             </div>
         )
     }
