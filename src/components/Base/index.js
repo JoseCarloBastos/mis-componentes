@@ -5,9 +5,9 @@ import StyledFondo from './styled/fondo';
 export default class Base extends React.Component {
 
     render() {
-        const { children } = this.props
+        const { children, background } = this.props
         return(
-            <StyledFondo>
+            <StyledFondo background={background}>
                 <StyledBase>
                     {children}
                 </StyledBase>

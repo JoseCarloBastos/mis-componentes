@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import fondo from '../../../styles/img/fondo001.jpg';
+import { COLOR_BLUE_LIGHT } from '../../../styles/colors';
 
 const StyledFondo = styled.div`
-    width: 100%; height: 900px;
+    width: 100%; height: 935px;
     position: relative;
-    background-image: url(${fondo});
-    background-repeat: repeat-x;
+    background: ${COLOR_BLUE_LIGHT};
 `
 
 export default StyledFondo;

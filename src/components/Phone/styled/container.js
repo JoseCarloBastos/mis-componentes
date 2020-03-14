@@ -31,6 +31,7 @@ const effectBordes = keyframes`
 `;
 
 const StyledContainer = styled.div`
+    display: inline-block;
     width: 250px;
     height: 500px;
     background: linear-gradient(45deg, ${porps => porps.color}, ${props => props.color1});
@@ -38,8 +39,21 @@ const StyledContainer = styled.div`
     margin: 50px 50px;
     text-align: center;
     padding: 10px;
-    border: 3px solid;
     animation: ${effectBordes} 5s linear infinite;
+
+    ${props => {
+        if (props.variante==="contact") {
+            return `background: white;`;
+        }
+    }}
+
+    ${props => {
+        if (props.border==="lightchange") {
+            return `
+                border: 3px solid;    
+            `;
+        }
+    }}
 `
 
 export default StyledContainer;
