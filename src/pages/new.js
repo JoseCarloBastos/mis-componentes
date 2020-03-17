@@ -1,19 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Header from '../components/Header/index';
-import Button from '../components/Button/index';
-import Base from '../components/Base/index';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import Base from '../components/Base';
+import Header from '../components/Header';
+import Page from '../components/Page';
+import Button from '../components/Button';
+
 
 class New extends React.Component {
 
     render() {
-        return(
+        return (
             <Base>
                 <Header></Header>
-                <h1>New</h1>
-                <Link to="/">
-                    <Button text="Back page"/>
-                </Link>
+                <Page
+                    title="New">
+                    <Link to="/">
+                        <Button text="Back page" />
+                    </Link>
+                </Page>
             </Base>
         )
     }

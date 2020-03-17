@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header/index';
 import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
-import Button from '../components/Button/index';
-import Base from '../components/Base/index';
+
+import Base from '../components/Base';
+import Header from '../components/Header';
+import Page from '../components/Page';
+import Button from '../components/Button';
 
 function Map() {
     return (
@@ -24,20 +26,22 @@ class Mapa extends React.Component {
         return (
             <Base>
                 <Header></Header>
-                <h1>Mapa</h1>
-                <Link to="/">
-                    <Button text="Back page"/>
-                </Link>
-                <br></br>
-                <div style={{width: '50vw', height: '50vh', textAlign: 'center'}}>
-                    <WrappedMap
-                        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-                        loadingElement={<div style={{ height: "100%" }} />}
-                        containerElement={<div style={{ height: "100%" }} />}
-                        mapElement={<div style={{ height: "100%" }} />}
+                <Page
+                    title="Mapa">
+                    <Link to="/">
+                        <Button text="Back page" />
+                    </Link>
+                    <br></br>
+                    <div style={{ width: '50vw', height: '50vh', textAlign: 'center' }}>
+                        <WrappedMap
+                            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+                            loadingElement={<div style={{ height: "100%" }} />}
+                            containerElement={<div style={{ height: "100%" }} />}
+                            mapElement={<div style={{ height: "100%" }} />}
 
-                    />
-                </div>
+                        />
+                    </div>
+                </Page>
             </Base>
         )
     }

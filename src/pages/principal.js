@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import Base from '../components/Base/index';
-import Header from '../components/Header/index';
-import Button from '../components/Button/index';
+import Base from '../components/Base';
+import Header from '../components/Header';
+import Page from '../components/Page';
+import Card from '../components/Card';
 
 import { COLOR_BLUE_LIGHT } from '../styles/colors';
+import CardPhoto from '../styles/icons/desconocido001.png';
 
 class Principal extends React.Component {
 
@@ -13,27 +14,21 @@ class Principal extends React.Component {
         return (
             <Base background={COLOR_BLUE_LIGHT}>
                 <Header></Header>
-                <h1>Pagina Principal</h1>
-                <Link to="/new">
-                    <Button 
-                        variante="transparent"
-                        color=""
-                        text="Go to new"/>
-                </Link>
-                <br></br>
-                <Link to="/mapa">
-                    <Button 
-                        variante="transparent"
-                        color=""
-                        text="Go to map"/>
-                </Link>
-                <br></br>
-                <Link to="/mobile">
-                    <Button 
-                        variante="transparent"
-                        color=""
-                        text="Go to phone"/>
-                </Link>
+                <Page
+                    title="Pagina Principal">
+                    <Card
+                        photo={CardPhoto}
+                        title="New"
+                        link="/new" />
+                    <Card
+                        photo={CardPhoto}
+                        title="Mapa"
+                        link="/mapa" />
+                    <Card
+                        photo={CardPhoto}
+                        title="Mobile"
+                        link="/mobile" />
+                </Page>
             </Base>
         )
     }
