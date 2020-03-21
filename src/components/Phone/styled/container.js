@@ -31,12 +31,11 @@ const effectBordes = keyframes`
 `;
 
 const StyledContainer = styled.div`
-    display: inline-block;
     width: 250px;
     height: 500px;
     background: linear-gradient(45deg, ${porps => porps.color}, ${props => props.color1});
     border-radius: 12px;
-    margin: 50px 50px;
+    margin: 20px auto;
     text-align: center;
     padding: 10px;
     animation: ${effectBordes} 5s linear infinite;

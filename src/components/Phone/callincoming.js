@@ -17,7 +17,7 @@ export default class Callincoming extends React.Component {
             <StyledContainer color={color} color1={color1} border={border}>
 
                 <StyledPhoto>
-                    <StyledIcon src={img} />
+                    <StyledIcon contacto src={img} />
                 </StyledPhoto>
 
                 <StyledInfo>
@@ -26,7 +26,7 @@ export default class Callincoming extends React.Component {
                     <StyledData>Call incoming</StyledData>
                 </StyledInfo>
 
-                <StyledBotones>
+                <StyledBotones respondercolgar>
                     <Boton
                         text="Decline"
                         variante="colgar" />

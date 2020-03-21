@@ -9,6 +9,7 @@ const StyledData = styled.p`
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 0 3px 2px rgb(0,0,0,0.1);
 `
 
 export default StyledData;

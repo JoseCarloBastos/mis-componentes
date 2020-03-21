@@ -13,8 +13,14 @@ export default class Atrapalo extends React.Component {
     }
 
     handlerOnMouseOver() {
-        let xtop = this.aleatorio();
-        let xleft = this.aleatorio();
+        let xtop = this.aleatorio();//96
+        let xleft = this.aleatorio();//88
+        while (xleft>96) {
+            xtop = this.aleatorio();
+        }
+        while (xleft>88) {
+            xleft = this.aleatorio();
+        }
         this.setState({
                 top: `${xtop}%`,
                 left: `${xleft}%`,
