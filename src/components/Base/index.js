@@ -1,18 +1,19 @@
 import React from 'react';
 import StyledBase from './styled/base';
-import StyledFondo from './styled/fondo';
+import Nav from './nav';
+import StyledPantalla from './styled/pantalla';
 
 export default class Base extends React.Component {
 
     render() {
-        const { children, background } = this.props
-        return(
-            <StyledFondo background={background}>
-                <StyledBase>
-                    {children}
-                </StyledBase>
-            </StyledFondo>
-            
+        const { pantalla } = this.props
+        return (
+            <StyledBase>
+                <StyledPantalla>
+                    {pantalla}
+                </StyledPantalla>
+                <Nav/>
+            </StyledBase>
         )
     }
 }
