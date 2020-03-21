@@ -2,15 +2,19 @@ import React from 'react';
 
 import Base from '../components/Base';
 import Page from '../components/Page';
+import Atrapalo from '../components/Games/Atrapalo';
 
-class New extends React.Component {
+class Games extends React.Component {
 
     render() {
         return (
             <Base
                 pantalla={
                     <Page
-                        title="New">
+                        title="Games: Atrapalo">
+                        <div>
+                            <Atrapalo/>
+                        </div>
                     </Page>
                 }
             />
@@ -19,4 +23,4 @@ class New extends React.Component {
 
 }
 
-export default New
+export default Games;

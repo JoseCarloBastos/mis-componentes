@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
-    display: inline-block;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 8px;
     width: 150px; height: 180px;
     background: white;
