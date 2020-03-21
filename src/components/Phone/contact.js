@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
             <StyledContainer variante="contact" color={color} color1={color1} border={border}>
 
                 <StyledPhoto>
-                    <StyledIcon src={img} />
+                    <StyledIcon contacto src={img} />
                 </StyledPhoto>
 
                 <StyledInfo>
